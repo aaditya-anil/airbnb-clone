@@ -9,7 +9,7 @@ function Card(props){
         <div className="card-wrapper">
             <div className="player-image-wrapper">
                 <img src={props.playerImage} alt="player-image"></img>
-                <button>{props.buttonText}</button>
+                {props.buttonText === 0 && <button>SOLD OUT</button>}
             </div>
             <div className="rating-wrapper">
                 <img src={staricon} alt="star-icon"></img>
